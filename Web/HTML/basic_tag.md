@@ -8,24 +8,33 @@
 <!-- "..." --> : 주석
 ```
 ## 텍스트 관련 Tag
-```html
-<h1> ~ <h6>  Heading
+- `<h1> ~ <h6>` &nbsp; Heading <br>
 : 웹 페이지의 제목 또는 부제목을 표현할 때 사용, 숫자가 을수록 큰 제목을 표시.
-<p>  Paragraph
+
+- `<p>` &nbsp; Paragraph <br>
 : 하나의 문단을 표시할 때 사용.
-<hr>  Horizontal Rule
+
+- `<hr>` &nbsp; Horizontal Rule <br>
 : 수평선(종료태그 X).
-<br>  Break
+
+- `<br>` &nbsp; Break <br>
 : 줄바꿈(종료태그 X).
-<b>  Bold
+
+- `<b>` &nbsp; Bold &nbsp; <b>예시 문장</b> <br>
 : 텍스트 진하게 표시.
-<strong>
+
+- `<strong>` &nbsp; <strong>예시 문장</strong> <br>
 : 텍스트를 진하게 강조.
-<i>  Italic
+
+- `<i>` &nbsp; Italic &nbsp; <i>예시 문장</i> <br>
 : 텍스트를 이텔릭체로 표시.
-<em>  Emphasis
-: 텍스트를 이텔릭체로 강조.
-```
+
+- `<em>` &nbsp; Emphasis &nbsp; <em>예시 문장</em> <br>
+로 표시.
+
+- `<mark>` &nbsp; <mark>예시 문장</mark> <br>
+: 하이라이트 
+
 ## 목록 관련 Tag
 ```html
 <ol>  Ordered List
@@ -36,7 +45,7 @@
 : 목록하위 항목으로 사용되며, <ul>태그 또는 <ol>태그의 하위에 위치.
 <dl>  Definition List
 : 사전처럼 용어를 설명하는 목록을 생성.
-<dt>  Definition Term
+<dt>  Definition Title
 : 정의되는 용어 제목을 넣을 때 사용.
 <dd>  Definition Description
 : 용어를 설명하는 데 사용.
@@ -45,6 +54,10 @@
 ```html
 <table> : 표
 <caption> : 표의 제목이나 설명을 붙일 때 사용하는 태그
+*테이블 바로 밑에 작성
+<thead> : 헤딩 셀 그룹
+<tfoot> : 바닥 셀 그룹
+<tbody> : 데이터 셀 그룹
 <tr> : 행(row)
 <th> : 제목 셀
 <td> : 셀(cell)
