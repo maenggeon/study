@@ -71,6 +71,11 @@ alert( `Hello ${name}!` ); // Hello world!
 
 ## 함수(메서드)
 `function` 키워드로 선언.
+```JavaScript
+function print_hello_world() {
+    alert("Hello world!");
+}
+```
 
 ## 객체
 
