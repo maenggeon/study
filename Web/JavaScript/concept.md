@@ -70,8 +70,21 @@ alert( `Hello ${name}!` ); // Hello world!
   : 사용자한테 boolean 값을 입력받을 때 사용.
 
 ## 함수(메서드)
-자바스크립트에선 함수를 특별한 종류의 값으로 취급. <br>
 `function` 키워드로 선언.
+```JavaScript
+function name(parameter) {
+    // 함수 본문
+}
+```
+: 함수 호출 시 매개변수에 인수를 전달하지 않으면 그 값은 `undefined` 로 초기화.
+- 매개변수의 기본값
+  ```JavaScript
+  function name(parameter1, parameter2 = "기본값") {
+      // 함수 본문
+  }
+  ```
+  : `parameter2` 가 값을 전달받지 못하면 `기본값` 이 할당됨.
+  
 - 함수 선언문 방식
 ```JavaScript
 function print_hello_world() {
@@ -83,7 +96,7 @@ function print_hello_world() {
   : 함수는 값이기에 변수에 할당이 가능하다.
 ```JavaScript
 let print_hello_world = function() {
-    alert("Hello world!");
+    alert("Hello world!")
 };
 ```
 
@@ -91,12 +104,32 @@ let print_hello_world = function() {
 function print_hello_world() {
     alert("Hello world!");
 }
-let func = print_hello_world; // 함수 복
+let func = print_hello_world; // 함수 복사
 
 func(); // "Hello world!" 출력
-print_hello_world(); // 
+print_hello_world(); // 본래 함수도 정상적으로 실
 ```
+- 함수 표현식 vs 함수 선언문
+  - 함수 생성 시간
+    - 함수 표현식 : 실제 실행 흐름이 해당 함수에 도달했을 때 함수를 생성.
+    - 함수 선언문 : 함수 선언문이 정의되기 전에도 호출 가능. <br>
+    : 자바스크립트는 스크립트를 실행하기 전, 준비단계에서 전역에 선언된 함수 선언문을 찾고, 해당 함수를 생성함.
+  - 스코프
+    : 엄격 모드에서 함수 선언문은 블록 밖에서 접근하지 못함.
 
+- 화살표 함수
+  : `function` 키워드 대신 `=>` 를 사용하여 함수를 정의할 수 있음.
+```JavaScript
+// 일반 함수 표현식
+const add = function(a, b) {
+  return a + b;
+};
+
+// 화살표 함수
+const add = (a, b) => {
+  return a + b;
+};
+```
 ## 객체
 
 ## 이벤트
