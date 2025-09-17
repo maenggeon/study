@@ -40,7 +40,7 @@ HTML 문서에 적용될 때, 웹사이트상에서 동적 상호작용성을 �
 
 #### String
 - 큰따옴표(" "), 작은따옴표(' ')에 차이를 두지 않음.
-- 역 따옴표(` `)
+- 역 따옴표(\` \`)
 ```
 let name = world
 alert( `Hello ${name}!` ); // Hello world!
@@ -70,11 +70,31 @@ alert( `Hello ${name}!` ); // Hello world!
   : 사용자한테 boolean 값을 입력받을 때 사용.
 
 ## 함수(메서드)
+자바스크립트에선 함수를 특별한 종류의 값으로 취급. <br>
 `function` 키워드로 선언.
+- 함수 선언문 방식
 ```JavaScript
 function print_hello_world() {
     alert("Hello world!");
 }
+```
+
+- 함수 표현식 방식
+  : 함수는 값이기에 변수에 할당이 가능하다.
+```JavaScript
+let print_hello_world = function() {
+    alert("Hello world!");
+};
+```
+
+```JavaScript
+function print_hello_world() {
+    alert("Hello world!");
+}
+let func = print_hello_world; // 함수 복
+
+func(); // "Hello world!" 출력
+print_hello_world(); // 
 ```
 
 ## 객체
