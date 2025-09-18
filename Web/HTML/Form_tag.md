@@ -3,13 +3,16 @@
 입력받는 데이터들의 묶음을 폼(Form), 데이터를 폼 데이터(Form Data) 또는 필드(Field) 라고 함.
 
 ### 속성
-- `action` : 양식 데이터를 처리할 서버 프로그램의 URI
-- `method` : 양식을 제출할 때 사용할 HTTP 메서드<br>
-  - `post` : 양식 데이터를 요청 본문으로 전송.<br>
-  - `get` : 양식 데이터를 URL의 쿼리스트링으로 붙여서 전송.<br>
+- `action` : 양식 데이터를 처리할 서버 프로그램의 URL
+- `enctype` : 데이터 인코딩 타입
+- `method` : 양식을 제출할 때 사용할 HTTP 메서드
+  - `post` : 양식 데이터를 요청 본문으로 전송.
+  - `get` : 양식 데이터를 URL의 쿼리스트링으로 붙여서 전송.
+- `name` : 폼 이름
+- `target` : 윈도우 이름
 
 ### Input Tag
-`<input>` 요소로 데이터를 입력받을 수 있음.
+`<form>`의 자식태그로서, `<input>` 요소로 데이터를 입력받을 수 있음.
 ```html
 <input type="text" id="name">
 ```
@@ -24,8 +27,8 @@
 - `<label>` 하위에 `<input>` 위치
  ```html
 <label>
-         이름 :
-         <input type="text" id="name">
+         캡션 :
+         <input type="text" id="data">
 </label>
 ```
 - `for`와 `id`속성을 사용하여 `<label>`과 연결.
