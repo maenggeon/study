@@ -27,8 +27,7 @@
 - `<label>` 하위에 `<input>` 위치
  ```html
 <label>
-         캡션 :
-         <input type="text" id="data">
+  이름 : <input type="text" id="name">
 </label>
 ```
 - `for`와 `id`속성을 사용하여 `<label>`과 연결.
