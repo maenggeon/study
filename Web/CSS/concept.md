@@ -39,6 +39,16 @@ selector { <br>
   <link rel="stylesheet" href="style.css">
 </head>
 ```
+```html
+<head>
+  ...
+  <style>
+    @import url(style.css);
+  </style>
+  ...
+</head>
+
+```
 ```css
 /* style.css */
 h1 {
