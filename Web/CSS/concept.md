@@ -2,8 +2,9 @@
 Cascading Style Sheets 의 약자로, 마크업 언어로 작성된 문서의 표현과 스타일을 지정하는 스타일 시트 언어.
 
 ## 구조
-선택자{
-  속성명: 속성값;
+selector { <br>
+&nbsp; Property: value; <br>
+&nbsp; Property: value; <br>
 }
 
 ## 적용 방법
