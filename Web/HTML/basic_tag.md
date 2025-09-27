@@ -30,7 +30,7 @@
 : 텍스트를 이텔릭체로 표시.
 
 - `<em>` &nbsp; Emphasis &nbsp; <em>예시 문장</em> <br>
-로 표시.
+: 텍스트를 이텔릭체로 강조.
 
 - `<mark>` &nbsp; <mark>예시 문장</mark> <br>
 : 하이라이트 
