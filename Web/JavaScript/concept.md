@@ -87,8 +87,9 @@ alert( `Hello ${name}!` ); // Hello world!
 ## 함수(메서드)
 `function` 키워드로 선언.
 ```JavaScript
-function name(parameter) {
+function name(parameter, ...) {
     // 함수 본문
+    return return_value;
 }
 ```
 : 함수 호출 시 매개변수에 인수를 전달하지 않으면 그 값은 `undefined` 로 초기화.
