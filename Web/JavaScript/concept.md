@@ -149,19 +149,6 @@ const add = (a, b) => {
 ## 객체
 : 데이터와 해당 데이터를 처리하는 메소드(함수)를 함께 포함하는 소프트웨어 구성요소. <br>
 : 객체는 자신만의 고유한 속성을 가짐.
-```JavaScript
-let account = {
-  //preperty
-  owner     : "홍길동",
-  code      : "111",
-  balance   : 10000,
-
-  //method
-  deposit   : function() { ... },
-  withdraw  : function() { ... },
-  inquiry   : function() { ... }
-};
-```
 
 ### 자바스크립트 객체 유형
 - 코어 객체 <br>
@@ -211,11 +198,67 @@ let account = {
   : 문자열을 담기 위한 객체 <br>
   : String 객체는 생성되면 수정 불가능. <br>
 
-
-
 - Math <br>
-  :  <br>
+  : 수학 계산을 위한 프로퍼티와 메세지 제공 <br>
+  : new Math()롤 객쳋 생성하지 않고 사용. <br>
+  ```JavaScript
+  let sq = Math.sqrt(4)
+  ```
+  
+  - 난수 발생
+    - Math.random() : 0~1보다 작은 랜덤한 실수 생성. <br>
+    - Math.floor(m) : m의 소수점 이하를 제거. <br>
 
+- 사용자 객체 <br>
+  - new Object() <br>
+    : new Object()로 빈 객체 생성 후, 프로퍼티를 추가. <br>
+    : 메소드로 사용할 함수 미리 작성. <br>
+    ```JavaScript
+    let account = new Object();
+    account.owner = "홍갈동";
+    account.code = "111";
+    account.balance = 10000;
+    account.inquiry = inquiry;
+    account.deposit = deposit;
+    account.withdraw = withdraw;
+    ```
+    
+  - 리터럴 표기법 <br>
+    : 중괄호를 이용하여 객체의 프로퍼티와 메소드 지정. <br>
+    ```JavaScript
+    let account = {
+      //property
+      owner     : "홍길동",
+      code      : "111",
+      balance   : 10000,
+    
+      //method
+      deposit   : function() { ... },
+      withdraw  : function() { ... },
+      inquiry   : function() { ... }
+    };
+    ```
+
+  - 프로토타입 <br>
+  : 객체의 모양을 가진 틀(클래스) <br>
+  : 객체 생성시 `new` 연산자 이용.
+  - 프로토타입 생성
+    ```JavaScript
+    function Student(name, score) {
+      this.univ = "대학";
+      this.name = name;
+      this.score = score;
+      this.getGrade = function () {
+        if(this.score > 80) return 'A';
+        else if(this.score > 60) return 'B';
+        else return 'F';
+      }
+    }
+    ```
+  - 객체 생성
+    ```JavaScript
+    let gildong = new Student("홍길동", 75);
+    ```
 
 ## 이벤트
 HTML 요소에서 발생한 사건.
