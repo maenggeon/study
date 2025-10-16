@@ -147,6 +147,75 @@ const add = (a, b) => {
 };
 ```
 ## 객체
+: 데이터와 해당 데이터를 처리하는 메소드(함수)를 함께 포함하는 소프트웨어 구성요소. <br>
+: 객체는 자신만의 고유한 속성을 가짐.
+```JavaScript
+let account = {
+  //preperty
+  owner     : "홍길동",
+  code      : "111",
+  balance   : 10000,
+
+  //method
+  deposit   : function() { ... },
+  withdraw  : function() { ... },
+  inquiry   : function() { ... }
+};
+```
+
+### 자바스크립트 객체 유형
+- 코어 객체 <br>
+  : 기본 객체 <br>
+  : Array, Date, String, Math 타입 등 <br>
+  
+- HTML DOM 객체 <br>
+  : HTML 문서에 작성된 각 HTML 태그들을 객체화한 것들 <br>
+  : HTML 문서의 내용과 모양을 제어하기 위한 목적 <br>
+
+- 브라우저 객체 <br>
+  : 브라우저를 제어하기 위해 제공되는 객체 <br>
+  : 비표준 객체 <br>
+
+### 코어 객체
+- 코어 객체 생성 <br>
+  : new 키워드 이용. <br>
+  ```JavaScript
+  let today = new Date();
+  let msg = new String("Hello");
+  ```
+- 객체 접근 <br>
+  : 객체와 멤버 사이에 점(.) 연산자 이용. <br>
+  
+- 배열 <br>
+  : 여러 개의 원소들을 연속적으로 저장. <br>
+  - 배열 크기 <br>
+    : 배열 크기는 고정되지 않고 원소 추가 시 늘어남. <br>
+    : 현재 배열보다 큰 인덱스에 원소를 추가하면 값이 비어있는 중간의 원소들도 생기는 문제 발생. <br>
+      (비어있는 원소는 undefinde 값) <br>
+    
+  - [] 로 배열 만들기 <br>
+  ```JavaScript
+  let week = ["월", "화", "수", "목", "금", "토", "일"]
+  ```
+  - Array로 배열 만들기 <br>
+  ```JavaScript
+  let week = new Array(7);
+  week[0] = "월";
+  ...
+  ```
+  
+- Date <br>
+  : 날짜 및 시간 정보를 담는 객체 <br>
+
+- String <br>
+  : 문자열을 담기 위한 객체 <br>
+  : String 객체는 생성되면 수정 불가능. <br>
+
+
+
+- Math <br>
+  :  <br>
+
 
 ## 이벤트
 HTML 요소에서 발생한 사건.
